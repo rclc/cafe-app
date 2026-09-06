@@ -17,7 +17,8 @@ Step 3: Installing a dynamic website application on the EC2 instance
 -	move aws.zip and aws.phar into /var/www/html/café/ folder. Then run the command: `unzip aws -d /var/www/html/café/` and the command: `chmod -R +r /var/www/html/cafe/`
 -	To update the time zone configuration in PHP, in the bash terminal, run the following command: `sudo sed -i "2i date.timezone = \"America/New_York\" " /etc/php.ini`
 -	Restart the server using the command: `sudo service httpd restart`
-Trouble shooting
+
+#Trouble shooting
 -	Check instance system log
 -	Check web server log. For example: `sudo tail -n 50 /var/log/httpd/error_log`
 -	Check PHP-FPM log. For example: `sudo tail -n 50 /var/log/php-fpm/www-error.log`
