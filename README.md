@@ -13,12 +13,12 @@ Step 3: Installing a dynamic website application on the EC2 instance
 -	unzip setup.zip in your working directory. Then, change into the setup folder and run ./set-app-parameters.sh
 -	Open the Secrets Manager console. From the panel on the left, choose Secrets and verify if there are seven parameters stores as secrets.
 -	unzip db.zip. Then, change into the db folder and run ./set-root-password.sh and ./create-db.sh
--	unzip café.zip in to /var/www/html/ using the command: unzip café.zip -d /var/www/html/
--	move aws.zip and aws.phar into /var/www/html/café/ folder. Then run the command: unzip aws -d /var/www/html/café/ and the command: chmod -R +r /var/www/html/cafe/
--	To update the time zone configuration in PHP, in the bash terminal, run the following command: sudo sed -i "2i date.timezone = \"America/New_York\" " /etc/php.ini
--	Restart the server using the command: sudo service httpd restart
+-	unzip café.zip in to /var/www/html/ using the command: `unzip café.zip -d /var/www/html/`
+-	move aws.zip and aws.phar into /var/www/html/café/ folder. Then run the command: `unzip aws -d /var/www/html/café/` and the command: `chmod -R +r /var/www/html/cafe/`
+-	To update the time zone configuration in PHP, in the bash terminal, run the following command: `sudo sed -i "2i date.timezone = \"America/New_York\" " /etc/php.ini`
+-	Restart the server using the command: `sudo service httpd restart`
 Trouble shooting
 -	Check instance system log
--	Check web server log. For example: sudo tail -n 50 /var/log/httpd/error_log
--	Check PHP-FPM log. For example: sudo tail -n 50 /var/log/php-fpm/www-error.log
+-	Check web server log. For example: `sudo tail -n 50 /var/log/httpd/error_log`
+-	Check PHP-FPM log. For example: `sudo tail -n 50 /var/log/php-fpm/www-error.log`
 
